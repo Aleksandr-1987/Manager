@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Хост: 127.0.0.1
--- Время создания: Окт 19 2024 г., 16:30
+-- Время создания: Окт 19 2024 г., 16:49
 -- Версия сервера: 10.4.28-MariaDB
 -- Версия PHP: 8.2.4
 
@@ -35,6 +35,13 @@ CREATE TABLE `files` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 
 --
+-- Дамп данных таблицы `files`
+--
+
+INSERT INTO `files` (`id`, `filename`, `filepath`, `uploaded_at`) VALUES
+(16, 'Some.txt', 'uploads/Some.txt', '2024-10-19 14:47:01');
+
+--
 -- Индексы сохранённых таблиц
 --
 
@@ -52,7 +59,7 @@ ALTER TABLE `files`
 -- AUTO_INCREMENT для таблицы `files`
 --
 ALTER TABLE `files`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
