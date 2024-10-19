@@ -1,0 +1,135 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 103px;
+    z-index: 5;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0.46px;
+    background: #F4F9FF;
+}
+
+.header_content {
+    display: flex;
+    justify-content: space-between;
+    height: 43px;
+}
+
+.header_start, .header_end {
+    display: flex;
+}
+
+.header_start_course {
+    margin: 0 24px 0 48px;
+    box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
+    background-color: rgba(255, 182, 0, 1);
+    border-radius: 4px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 22px;
+}
+
+.header_start_course:hover {
+    border: 1px solid black;
+}
+
+.header_start_course_text {
+    margin-right: 8px;
+}
+
+.header_start_item, .header_end_item {
+    margin: 0 12px;
+    padding: 10px 11px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 4px;
+}
+
+.header_start_item:hover, .header_end_item:hover {
+    background-color: rgba(0, 0, 0, 0.10);
+}
+
+.header_menu {
+    width: 43px;
+    padding: 0;
+    border-radius: 50%;
+    justify-content: center;
+}
+
+.header_end_social {
+    display: flex; 
+    align-items: center;  
+    margin: 0 14px;
+}
+
+.header_end_social_item {
+    width: 28px;
+    height: 28px;
+    margin: 0 10px;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    border-radius: 50%;
+}
+
+.header_end_social_item:hover {
+    background-color: rgba(0, 0, 0, 0.10);
+}
+
+.header_burger {
+    margin: 0 12px;
+    align-items: center;
+    width: 43px;
+    padding: 0;
+    border-radius: 50%;
+    justify-content: center;
+    display: none;
+} 
+
+@media (max-width: 1320px) {
+    .header {
+        font-size: 13px;
+        line-height: 22px;
+        letter-spacing: 0.46px;
+    }
+
+    .header_start_item {
+        margin: 0 4px;
+        padding: 4px;
+    }
+
+    .header_start_course {
+        margin: 0 4px 0 12px;
+        padding: 10px;
+        background-color: #F4F9FF;
+        color: #424242;
+        box-shadow: none;
+    }
+
+    .header_course_color {
+        fill: black;
+        fill-opacity: 0.56;
+    }
+
+    .header_start_course:hover {
+        border: 1px solid black;
+    }
+}
+
+@media (max-width: 1000px) {
+    .header_start_item, .header_end_social {
+        display: none;
+    }
+
+    .header_burger {
+        display: flex;
+    }
+}

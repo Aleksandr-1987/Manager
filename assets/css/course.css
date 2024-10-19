@@ -1,0 +1,137 @@
+.course {
+    margin-top: 0px;
+    padding: 64px 0 34px 0;
+    box-shadow: 0px 4px 15px 0px #70809633;
+    height: 0px;
+    overflow: hidden;
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+.course.is_active {
+    margin-top: 103px;
+    height: auto;
+    margin-bottom: 4px;
+    opacity: 1;
+}
+
+.course_content {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.course_item {  
+    width: 577px;
+    height: auto;
+    border-radius: 8px;
+    padding: 24px;
+    margin: 0 5px 30px 5px;
+    border: 1.5px solid rgba(208, 215, 222, 1);
+    box-shadow: 0px 4px 15px 0px rgba(112, 128, 150, 0.2);
+}
+
+.course_item_title {
+    font-size: 16px;
+    line-height: 20.45px;
+    margin-bottom: 24px;
+}
+
+.course_green {
+    color: #33BC9D;
+}
+.course_blue {
+    color: #095FCC;
+}
+.course_fiolet {
+    color: #5151F7;
+}
+.course_orange {
+    color: #FFB600;
+}
+.course_purple {
+    color: #F86A85;
+}
+.course_lightblue {
+    color: #2D9EC7;
+}
+
+.course_item_item {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 40px;
+}
+
+.course_item_start {
+    display: flex;    
+    width: 80%;
+}
+
+.course_item_start_svg {
+    display: flex;
+    align-items: center;
+}
+
+.course_item_start_text {
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.course_item_end {
+    width: 81px;
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 18px;
+    letter-spacing: 0.16px;
+    color: #095FCC;
+    border-radius: 100px;
+    border: 1px solid #095FCC;
+    padding: 0 8px;
+    display: flex;
+    align-items: center;
+}
+
+@media (max-width: 1320px) {
+    .course_item {
+        width: 477px;
+    }
+}
+
+@media (max-width: 1120px) {
+    .course_item {
+        width: 577px;
+    }    
+}
+
+@media (max-width: 768px) {
+    .course {
+        padding: 24px 0;
+    }
+}
+
+@media (max-width: 550px) {
+    .course_item_start {
+        width: 100%;
+    }
+    .course_item_item {
+        flex-direction: column;
+        min-height: 50px;
+        align-items: start;       
+    }
+    .course_item_start_text {
+        max-height: 40px;
+        font-size: 16px;        
+        width: 245px;           
+        white-space: nowrap;   
+        overflow: hidden;      
+        text-overflow: ellipsis;
+    }
+
+    .course_item_title {
+        margin-bottom: 12px;
+    }    
+}
